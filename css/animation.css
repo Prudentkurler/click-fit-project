@@ -116,3 +116,33 @@
     transform: scale(1.08);
   }
 }
+.filter-buttons button {
+  transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  border-color: var(--acid);
+  background: var(--acid);
+  color: var(--ink);
+}
+
+.class-row {
+  transition: padding 0.25s, background-color 0.25s;
+}
+
+.class-row:hover {
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background: #151515;
+}
+
+.class-row a {
+  transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+}
+
+.class-row a:hover {
+  border-color: var(--acid);
+  background: var(--acid);
+  color: var(--ink);
+}

@@ -547,3 +547,70 @@ btn {
   letter-spacing: 0.12em;
   text-transform: uppercase;
 }
+
+/* the Schedule section we move */
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-buttons button {
+  padding: 8px 14px;
+  border: 1px solid #555;
+  background: transparent;
+  color: #999;
+  font-size: 0.68rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.class-row {
+  display: grid;
+  grid-template-columns: 130px minmax(250px, 1.4fr) 0.6fr 0.6fr 60px;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--line);
+  color: var(--white);
+}
+
+.class-row:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.class-row time {
+  color: var(--acid);
+  font: 800 1.8rem var(--display);
+}
+
+.class-row small {
+  color: #777;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.class-row h3 {
+  margin: 0.1rem 0 0;
+  font: 800 2rem var(--display);
+  text-transform: uppercase;
+}
+
+.class-row > span,
+.class-row > strong {
+  color: #999;
+  font-size: 0.73rem;
+  text-transform: uppercase;
+}
+
+.class-row a {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #444;
+  border-radius: 50%;
+}
+
