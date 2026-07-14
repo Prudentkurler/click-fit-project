@@ -60,7 +60,7 @@
                     </div>
                     <div class="col-xl-3 pb-xl-3">
                         <p class="hero-copy reveal-up">Training built around real people, measurable progress and the energy to keep showing up.</p>
-                        <a class="circle-cta reveal-up" href="#programs" aria-label="Explore programs"><span>Explore<br>programs</span><i class="bi bi-arrow-down"></i></a>
+                        <a class="btn btn-acid btn-lg reveal-up" href="#programs" aria-label="Explore programs">Explore programs <i class="bi bi-arrow-down"></i></a>
                     </div>
                     </div>
                 </div>
@@ -178,12 +178,12 @@
                 <div class="col-lg-4" data-aos="fade-up">
                     <p class="eyebrow">AJAX live interface</p>
                     <h2 class="display-title">THE GEAR FEED</h2>
-                    <p class="section-copy">This area loads live content from the required REST endpoint after the page starts. Refresh it without reloading the page.</p>
-                    <button id="refreshFeed" class="btn btn-ink">Refresh feed <i class="bi bi-arrow-clockwise"></i></button>
+                    <button id="refreshFeed" class="btn btn-ink mt-2">Refresh feed <i class="bi bi-arrow-clockwise"></i></button>
                 </div>
                 <div class="col-lg-8">
                     <div id="feedStatus" class="feed-status"><span class="spinner-border spinner-border-sm"></span> Connecting to api.restful-api.dev…</div>
                     <div id="apiContent" class="api-grid" aria-live="polite"></div>
+                    <button id="loadMoreFeed" type="button" class="btn btn-ink mt-4" hidden>Load more</button>
                 </div>
                 </div>
             </div>
@@ -197,7 +197,6 @@
           <div class="col-lg-5" data-aos="fade-right">
             <p class="eyebrow">Member media</p>
             <h2 class="display-title">DROP YOUR<br>PROGRESS.</h2>
-            <p class="section-copy">Drag workout images into the zone or click to browse. The Node.js backend validates and saves them inside <code>upload_images</code>.</p>
             <ul class="upload-rules"><li>JPG, PNG, WEBP or GIF</li><li>Maximum 5 MB each</li><li>Up to 6 images</li></ul>
           </div>
           <div class="col-lg-7" data-aos="fade-left">
