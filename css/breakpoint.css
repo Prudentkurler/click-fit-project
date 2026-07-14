@@ -1,0 +1,100 @@
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    margin: 1rem -1rem -1rem;
+    padding: 1.5rem;
+    background: var(--ink);
+  }
+
+  .hero-section {
+    min-height: 820px !important;
+  }
+
+  .hero-title {
+    font-size: clamp(5rem, 18vw, 9rem);
+  }
+
+  .hero-copy {
+    max-width: 440px;
+    margin-top: 2rem;
+  }
+
+  .program-slider {
+    margin: 0 -10px;
+  }
+
+  .program-slider .slick-slide {
+    margin: 0 10px;
+  }
+
+  .manifesto-art {
+    min-height: 420px;
+  }
+
+  .class-row {
+    grid-template-columns: 90px 1fr 50px;
+  }
+
+  .class-row > span,
+  .class-row > strong {
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    min-height: 720px !important;
+  }
+
+  .hero-title {
+    font-size: 4.7rem;
+  }
+
+  .circle-cta {
+    width: 105px;
+    height: 105px;
+  }
+
+  .display-title,
+  .statement-title {
+    font-size: 4rem;
+  }
+
+  .program-carousel-controls {
+    justify-content: flex-start;
+  }
+
+  .program-slider {
+    margin: 0 -8px;
+  }
+
+  .program-slider .slick-slide {
+    margin: 0 8px;
+  }
+
+  .program-card {
+    min-height: 420px;
+    padding: 1.25rem;
+  }
+
+  .program-content h3 {
+    font-size: 2.7rem;
+  }
+
+  .manifesto-art {
+    min-height: 330px;
+  }
+
+  .art-ring {
+    width: 230px;
+    height: 230px;
+  }
+
+  .art-core {
+    font-size: 7rem;
+  }
+
+  .stat-item {
+    border-bottom: 1px solid #bdbdb7;
+  }
+
+}

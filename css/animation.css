@@ -97,3 +97,22 @@
   transform: translateY(-8px);
   border-color: rgba(220, 255, 0, 0.8);
 }
+
+.manifesto-art::before,
+.manifesto-art::after {
+  transform: rotate(35deg);
+}
+
+.manifesto-art::after {
+  transform: rotate(-35deg);
+}
+
+.art-ring {
+  animation: pulse 2.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.08);
+  }
+}

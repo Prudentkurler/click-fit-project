@@ -67,9 +67,7 @@ a{
 /*we move to the navbar*/
 
 
-.site-header{
-    background: #000;
-}
+
 .brand-mark {
   position: relative;
   color: var(--white);
@@ -435,3 +433,117 @@ btn {
   text-transform: uppercase;
 }
 
+
+/* Manifesto and statistics */
+
+.manifesto-section,
+.feed-section,
+.upload-section {
+  overflow: hidden;
+}
+
+.manifesto-section {
+  background: var(--paper);
+}
+
+.manifesto-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 520px;
+  overflow: hidden;
+  background: var(--acid);
+}
+
+.manifesto-art::before,
+.manifesto-art::after {
+  position: absolute;
+  width: 110%;
+  height: 3px;
+  background: var(--ink);
+  content: "";
+}
+
+.art-ring {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+}
+
+.art-core {
+  z-index: 1;
+  font: 900 9rem var(--display);
+  letter-spacing: -0.1em;
+}
+
+.manifesto-art span {
+  position: absolute;
+  right: -50px;
+  bottom: 60px;
+  padding: 9px 70px;
+  background: var(--ink);
+  color: var(--acid);
+  font: 700 1rem var(--display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.statement-title span {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--ink);
+}
+
+.manifesto-section .section-copy {
+  color: #555;
+}
+
+.method-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.method-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid #b8b8b3;
+  font: 700 1.3rem var(--display);
+  text-transform: uppercase;
+}
+
+.method-list span {
+  margin-right: 1.2rem;
+  color: #888;
+  font-size: 0.8rem;
+}
+
+.stats-strip {
+  border-top: 1px solid #bdbdb7;
+  border-bottom: 1px solid #bdbdb7;
+  background: var(--paper);
+}
+
+.stat-item {
+  padding: 2.5rem 1rem;
+  border-right: 1px solid #bdbdb7;
+  text-align: center;
+}
+
+.stat-item:last-child {
+  border-right: 0;
+}
+
+.stat-item strong {
+  display: block;
+  font: 900 clamp(3.5rem, 7vw, 6.5rem) / 0.8 var(--display);
+}
+
+.stat-item span {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
