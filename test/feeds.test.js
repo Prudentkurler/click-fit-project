@@ -30,12 +30,12 @@ test('visible count never exceeds the number of feed items', () => {
   assert.equal(getNextVisibleCount(13, items.length), 13);
 });
 test('feed markup includes the Load more control', async () => {
-  const markup = await readFile(new URL('../index.htm', import.meta.url), 'utf8');
+  const markup = await readFile(new URL('../index.html', import.meta.url), 'utf8');
 
   assert.match(markup, /id="loadMoreFeed"/);
 });
 test('hero Explore programs link uses the rectangular button style', async () => {
-  const markup = await readFile(new URL('../index.htm', import.meta.url), 'utf8');
+  const markup = await readFile(new URL('../index.html', import.meta.url), 'utf8');
   const heroCta = markup.match(/<a[^>]+aria-label="Explore programs"[^>]*>.*?<\/a>/s)?.[0] || '';
 
   assert.match(heroCta, /class="[^"]*btn btn-acid btn-lg reveal-up[^"]*"/);

@@ -22,7 +22,7 @@ app.use(cors());
 app.use(express.json());
 
 app.get('/', (_request, response) => {
-  response.sendFile(path.join(__dirname, 'index.htm'));
+  response.sendFile(path.join(__dirname, 'index.html'));
 });
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));

@@ -110,7 +110,7 @@ js/                 Frontend modules
 server/             Database and upload configuration
 test/               Automated tests
 database.sql        MySQL schema and stored procedure
-index.htm           Main page
+index.html           Main page
 server.js           Express application and API routes
 ```
 
