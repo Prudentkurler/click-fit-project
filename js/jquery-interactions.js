@@ -15,7 +15,7 @@ export function initJqueryInteractions(){
     initScrollState($window,$header, $backToTop);
     initRevealAnimations();
     
-    
+     $backToTop.on('click', () => $('html, body').animate({ scrollTop: 0 }, 650));
 }
 
 

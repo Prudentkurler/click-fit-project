@@ -762,3 +762,42 @@ btn {
 .dropzone .dz-preview .dz-image {
   border-radius: 0;
 }
+/* last last Footer */
+
+.contact-title {
+  margin: 1rem 0 2.5rem;
+  color: var(--white);
+  font: 900 clamp(5rem, 12vw, 12rem) / 0.72 var(--display);
+  letter-spacing: -0.05em;
+}
+
+.contact-title span {
+  color: var(--acid);
+}
+
+.site-footer {
+  background: var(--paper);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.2rem;
+  font-weight: 700;
+}
+
+.back-to-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+  background: var(--acid);
+  color: var(--ink);
+}
+

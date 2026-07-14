@@ -1,7 +1,11 @@
 const $ = window.jQuery;
+const Dropzone = window.Dropzone;
+
+if (Dropzone) {
+  Dropzone.autoDiscover = false;
+}
 
 export function initUpload() {
-  const Dropzone = window.Dropzone;
   const $form = $('#clickFitDropzone');
   const $submit = $('#uploadSubmit');
 

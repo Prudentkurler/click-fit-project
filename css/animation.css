@@ -164,3 +164,22 @@
 .clickfit-dropzone.dz-drag-hover {
   background: rgba(255, 255, 255, 0.35) !important;
 }
+
+.back-to-top {
+  transition: opacity 0.25s, background-color 0.25s;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.footer-links a {
+  transition: text-decoration-color 0.25s;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--acid);
+  text-decoration-thickness: 4px;
+}
