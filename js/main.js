@@ -1,4 +1,4 @@
-import { initJqueryInteractions } from "./jquery-interactions";
+import { initJqueryInteractions } from "./jquery-interactions.js";
 
 
 const $ = window.jQuery;
