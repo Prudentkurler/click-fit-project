@@ -680,3 +680,85 @@ btn {
   color: #d0d0ca;
   font: 900 3rem var(--display);
 }
+
+* Upload */
+
+.upload-section .section-copy {
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.upload-rules {
+  padding: 0;
+  list-style: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.upload-rules li {
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.clickfit-dropzone {
+  display: grid;
+  place-items: center;
+  min-height: 390px;
+  border: 2px dashed var(--ink) !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.dz-message {
+  margin: 0 !important;
+  text-align: center;
+}
+
+.dz-message i {
+  font-size: 4rem;
+}
+
+.dz-message h3 {
+  margin: 1rem 0 0;
+  font: 900 3.5rem var(--display);
+}
+
+.dz-message p {
+  margin-bottom: 1.5rem;
+}
+
+.dz-message span {
+  padding: 10px 15px;
+  background: var(--ink);
+  color: var(--white);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.upload-results {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.upload-submit {
+  margin-top: 1rem;
+}
+
+.upload-submit:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.upload-results.success {
+  color: #1c5a22;
+}
+
+.upload-results.error {
+  color: #8d1515;
+}
+
+.dropzone .dz-preview .dz-image {
+  border-radius: 0;
+}

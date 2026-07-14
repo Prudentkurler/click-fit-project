@@ -12,7 +12,7 @@
 
          <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
-
+          <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css"/>
         <link rel="stylesheet" href="./css/breakpoint.css"/>
         <link rel="stylesheet" href="./css/animation.css"/>
@@ -189,6 +189,34 @@
             </div>
     </section>
 
+    <!--alright the upload section will also go here ngl-->
+         
+    <section id="upload" class="upload-section py-section section-acid">
+      <div class="container-fluid px-xl-5">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-5" data-aos="fade-right">
+            <p class="eyebrow">Member media</p>
+            <h2 class="display-title">DROP YOUR<br>PROGRESS.</h2>
+            <p class="section-copy">Drag workout images into the zone or click to browse. The Node.js backend validates and saves them inside <code>upload_images</code>.</p>
+            <ul class="upload-rules"><li>JPG, PNG, WEBP or GIF</li><li>Maximum 5 MB each</li><li>Up to 6 images</li></ul>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <form action="/api/upload" class="dropzone clickfit-dropzone" id="clickFitDropzone">
+              <div class="dz-message">
+                <i class="bi bi-cloud-arrow-up"></i>
+                <h3>DROP IMAGES HERE</h3>
+                <p>or click to choose files</p>
+                <span>UPLOAD YOUR ENERGY</span>
+              </div>
+            </form>
+            <button type="button" class="btn btn-ink upload-submit" id="uploadSubmit">
+              Send images <i class="bi bi-send"></i>
+            </button>
+            <div id="uploadResults" class="upload-results" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
         </main>
 
         <!--then the footer goes here-->
@@ -198,6 +226,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.3/min/dropzone.min.js"></script>
         <script type="module" src="./js/main.js"></script>
     </body>
 </html>
