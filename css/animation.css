@@ -77,3 +77,14 @@
     transform: translateX(-50%);
   }
 }
+
+.program-arrow {
+  transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+}
+
+.program-arrow:hover,
+.program-arrow:focus-visible {
+  border-color: var(--acid);
+  background: var(--acid);
+  color: var(--ink);
+}
