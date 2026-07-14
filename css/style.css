@@ -614,3 +614,69 @@ btn {
   border-radius: 50%;
 }
 
+
+/* So I'm styling the feeds here */
+
+.feed-section {
+  background: var(--paper);
+}
+
+.feed-section .section-copy {
+  color: #555;
+}
+
+.feed-status {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid #bcbcb6;
+  font-size: 0.8rem;
+}
+
+.feed-status.is-error {
+  border-color: #a33131;
+  color: #a33131;
+}
+
+.api-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.api-card {
+  position: relative;
+  min-height: 185px;
+  padding: 1.4rem;
+  overflow: hidden;
+  border: 1px solid #bcbcb6;
+  background: transparent;
+}
+
+.api-card small {
+  color: #777;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.api-card h3 {
+  margin: 0.5rem 0;
+  font: 800 1.9rem var(--display);
+  text-transform: uppercase;
+}
+
+.api-card p {
+  margin: 0;
+  color: #555;
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+.api-card .api-id {
+  position: absolute;
+  right: 12px;
+  bottom: 5px;
+  color: #d0d0ca;
+  font: 900 3rem var(--display);
+}

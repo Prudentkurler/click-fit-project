@@ -170,6 +170,25 @@
             </div>
     </section>
 
+        <!--so the feeds fetching from the api will be here-->
+
+          <section id="sports-feed" class="feed-section py-section">
+            <div class="container-fluid px-xl-5">
+                <div class="row g-5 align-items-start">
+                <div class="col-lg-4" data-aos="fade-up">
+                    <p class="eyebrow">AJAX live interface</p>
+                    <h2 class="display-title">THE GEAR FEED</h2>
+                    <p class="section-copy">This area loads live content from the required REST endpoint after the page starts. Refresh it without reloading the page.</p>
+                    <button id="refreshFeed" class="btn btn-ink">Refresh feed <i class="bi bi-arrow-clockwise"></i></button>
+                </div>
+                <div class="col-lg-8">
+                    <div id="feedStatus" class="feed-status"><span class="spinner-border spinner-border-sm"></span> Connecting to api.restful-api.dev…</div>
+                    <div id="apiContent" class="api-grid" aria-live="polite"></div>
+                </div>
+                </div>
+            </div>
+    </section>
+
         </main>
 
         <!--then the footer goes here-->
