@@ -1,0 +1,66 @@
+/*i just want to set my custom colors here*/
+
+:root{
+    --acid: #dcff00;
+    --ink: #080808;
+    --paper: #e7e7e2;
+    --white: #f7f7f3;
+    --line: rgba(255,255,255,0.2);
+    --display: "Barlow Condensed", sans-serif;
+    --body: "Inter", sans-serif;
+}
+
+/*lets style the base document as well*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    overflow-x:hidden;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+::selection{
+    background: var(--acid);
+    color: var(--ink);
+}
+
+/*now lets begin bussiness by styling the page loader*/
+
+.page-loader{
+    position:fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-content: center;
+    background: var(--ink);
+}
+
+.loader-mark{
+    color: var(--white);
+    font:900 6rem/1 var(--display);
+}
+
+.loader-line{
+    width: 150px;
+    height: 4px;
+    margin-top: 19px;
+    overflow: hidden;
+    background: #252525;
+}
+.loader-line span{
+    display: block;
+    width: 45%;
+    height: 100%;
+    background: var(--acid);
+}
+
