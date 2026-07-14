@@ -258,3 +258,180 @@ btn {
   color: var(--acid);
   font-style: normal;
 }
+
+/*the shared section*/
+.py-section {
+  padding-top: clamp(5rem, 9vw, 9rem);
+  padding-bottom: clamp(5rem, 9vw, 9rem);
+}
+
+.section-dark {
+  background: var(--ink);
+}
+
+.section-acid {
+  background: var(--acid);
+}
+
+.text-acid {
+  color: var(--acid) !important;
+}
+
+.display-title,
+.statement-title {
+  margin: 0;
+  font: 900 clamp(4rem, 8.5vw, 8.5rem) / 0.8 var(--display);
+  letter-spacing: -0.045em;
+}
+
+.section-dark .display-title {
+  color: var(--white);
+}
+
+/* now we touch the Program cards */
+
+.program-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin: 0 0 1.5rem;
+}
+
+.program-arrow {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #505050;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--white);
+}
+
+.program-status {
+  min-width: 66px;
+  color: #8d8d8d;
+  font: 700 0.88rem var(--display);
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.program-status strong {
+  color: var(--acid);
+  font-size: 1.15rem;
+}
+
+.program-slider {
+  margin: 0 -12px;
+}
+
+.program-slider .slick-slide {
+  height: auto;
+  margin: 0 12px;
+}
+
+.program-slider .slick-track {
+  display: flex !important;
+}
+
+.program-slider .slick-slide > div {
+  height: 100%;
+}
+
+.program-card {
+  position: relative;
+  display: flex !important;
+  align-items: flex-end;
+  height: 100%;
+  min-height: 520px;
+  padding: 2rem;
+  overflow: hidden;
+  isolation: isolate;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background-color: #191919;
+  background-position: center;
+  background-size: cover;
+}
+
+.program-card::before {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.06) 73%);
+  content: "";
+}
+
+.program-card::after {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: 0.35;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    125deg,
+    transparent 0 28px,
+    rgba(255, 255, 255, 0.035) 29px 31px
+  );
+  content: "";
+}
+
+.program-strength {
+  background-image: url('../assets/power-lab.png');
+}
+
+.program-cardio {
+  background-image: url('../assets/engine-room.png');
+}
+
+.program-mobility {
+  background-image: url('../assets/move-free.png');
+}
+
+.program-athlete {
+  background-image: url('../assets/game-ready.png');
+}
+
+.program-number {
+  position: absolute;
+  top: 1.4rem;
+  right: 1.5rem;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.35);
+  font: 800 4rem var(--display);
+}
+
+.program-content {
+  position: relative;
+  z-index: 1;
+  color: var(--white);
+}
+
+.program-content small {
+  color: var(--acid);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.program-content h3 {
+  margin: 0.5rem 0;
+  font: 800 3.5rem / 0.9 var(--display);
+}
+
+.program-content p {
+  max-width: 320px;
+  margin: 0 0 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.program-content a {
+  display: inline-block;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--acid);
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+

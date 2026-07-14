@@ -88,3 +88,12 @@
   background: var(--acid);
   color: var(--ink);
 }
+
+.program-card {
+  transition: transform 0.32s ease, border-color 0.32s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(220, 255, 0, 0.8);
+}
