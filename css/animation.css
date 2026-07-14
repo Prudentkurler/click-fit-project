@@ -19,3 +19,61 @@
         transform: translateX(125%);
     }
 }
+
+/*we animate the header i mean the navbar.... */
+
+.site-header {
+  transition: background 0.35s, transform 0.35s;
+}
+
+.site-header.scrolled {
+  background: rgba(8, 8, 8, 0.94);
+  backdrop-filter: blur(12px);
+}
+
+.nav-link::after {
+  transition: right 0.25s;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  right: 8px;
+}
+
+.btn-acid,
+.btn-ink {
+  transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+}
+
+.btn-acid:hover {
+  border-color: var(--white);
+  background: var(--white);
+  color: var(--ink);
+}
+
+.btn-ink:hover {
+  border-color: var(--acid);
+  background: var(--acid);
+  color: var(--ink);
+}
+
+.circle-cta {
+  transition: transform 0.3s, border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.circle-cta:hover {
+  transform: rotate(-8deg);
+  border-color: var(--acid);
+  background: var(--acid);
+  color: var(--ink);
+}
+
+.ticker-track {
+  animation: ticker 28s linear infinite;
+}
+
+@keyframes ticker {
+  to {
+    transform: translateX(-50%);
+  }
+}
